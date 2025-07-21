@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Automix Design System - Dark Fintech Theme with Green Neon Accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark Background System */
+    --background: 160 15% 3%;
+    --background-secondary: 160 20% 5%;
+    --background-tertiary: 160 25% 8%;
+    --foreground: 160 5% 95%;
+    --foreground-secondary: 160 5% 80%;
+    --foreground-muted: 160 5% 60%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Green Neon Accent System */
+    --primary: 150 100% 50%;
+    --primary-glow: 150 100% 60%;
+    --primary-dark: 150 80% 40%;
+    --primary-foreground: 160 15% 3%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* Glass Cards & Surfaces */
+    --card: 160 20% 8%;
+    --card-foreground: 160 5% 95%;
+    --card-border: 160 30% 15%;
+    
+    /* Interactive Elements */
+    --secondary: 160 25% 12%;
+    --secondary-foreground: 160 5% 95%;
+    --muted: 160 20% 10%;
+    --muted-foreground: 160 5% 70%;
+    --accent: 150 50% 20%;
+    --accent-foreground: 150 100% 80%;
+    
+    /* Utility Colors */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+    --border: 160 30% 15%;
+    --input: 160 25% 12%;
+    --ring: 150 100% 50%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Design System Extensions */
+    --glass-bg: 160 20% 8% / 0.1;
+    --glass-border: 160 30% 25% / 0.2;
+    --glow-primary: 150 100% 50% / 0.4;
+    --glow-secondary: 150 100% 60% / 0.2;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(160 15% 3%) 0%, hsl(150 30% 8%) 50%, hsl(160 15% 3%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(var(--glass-bg)) 0%, hsl(160 30% 10% / 0.05) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--glow-primary)) 0%, transparent 70%);
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 40px hsl(var(--glow-secondary));
+    --shadow-glass: 0 8px 32px hsl(160 20% 5% / 0.3);
+    --shadow-neumorphic: 
+      8px 8px 16px hsl(160 20% 2% / 0.8),
+      -8px -8px 16px hsl(160 30% 10% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.3s ease;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +126,89 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-['Inter',_sans-serif] antialiased;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+  }
+
+  /* Typography System */
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-semibold;
+    letter-spacing: -0.02em;
+  }
+
+  p, span, div {
+    @apply opacity-90;
+  }
+
+  /* Glass Morphism Components */
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+    transition: var(--transition-smooth);
+  }
+
+  .glass-card:hover {
+    box-shadow: var(--shadow-glass), var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+
+  /* Neumorphic Buttons */
+  .neuro-button {
+    background: var(--gradient-glass);
+    box-shadow: var(--shadow-neumorphic);
+    border: 1px solid hsl(var(--border));
+    transition: var(--transition-glow);
+  }
+
+  .neuro-button:hover {
+    box-shadow: var(--shadow-neumorphic), var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+
+  .neuro-button-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    box-shadow: 
+      0 4px 15px hsl(var(--glow-primary)),
+      inset 0 1px 0 hsl(var(--primary-glow));
+    border: 1px solid hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-glow);
+  }
+
+  .neuro-button-primary:hover {
+    box-shadow: 
+      0 8px 25px hsl(var(--glow-primary)),
+      inset 0 1px 0 hsl(var(--primary-glow));
+    transform: translateY(-2px);
+  }
+
+  /* Glow Effects */
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--glow-secondary));
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px hsl(var(--glow-secondary));
+  }
+
+  /* Scroll Animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Navigation Blur */
+  .nav-blur {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--background) / 0.8);
   }
 }
