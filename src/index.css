@@ -211,4 +211,14 @@
     backdrop-filter: blur(20px);
     background: hsl(var(--background) / 0.8);
   }
+
+  /* Scrolling Animation */
+  @keyframes scroll-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll-right {
+    animation: scroll-right 20s linear infinite;
+  }
 }
