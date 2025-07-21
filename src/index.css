@@ -137,9 +137,7 @@
     letter-spacing: -0.02em;
   }
 
-  p, span, div {
-    @apply opacity-90;
-  }
+  /* Removed global opacity reduction to show colors as intended */
 
   /* Glass Morphism Components */
   .glass-card {
