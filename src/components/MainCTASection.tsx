@@ -1,4 +1,22 @@
+import { useEffect } from 'react';
+
 const MainCTASection = () => {
+  useEffect(() => {
+    // Load Cal.com embed script
+    const script = document.createElement('script');
+    script.src = 'https://app.cal.com/embed/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      const existingScript = document.querySelector('script[src="https://app.cal.com/embed/embed.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   return (
     <section id="contact" className="py-20 bg-background-secondary/30">
       <div className="container mx-auto px-6">
@@ -14,21 +32,21 @@ const MainCTASection = () => {
             </p>
           </div>
 
-          {/* Calendly Embed Placeholder */}
-          <div className="glass-card rounded-2xl p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="aspect-[4/3] bg-background-tertiary rounded-xl flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 glow-border">
-                  <span className="text-2xl">📅</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Calendar Integration</h3>
-                <p className="text-foreground-secondary mb-4">
-                  Embed your Calendly link here to allow instant booking
-                </p>
-                <button className="neuro-button-primary px-6 py-3 rounded-lg">
-                  Schedule Your Free Audit
-                </button>
-              </div>
+          {/* Cal.com Embed */}
+          <div className="glass-card rounded-2xl p-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div 
+              data-cal-link="automix/30min"
+              data-cal-config='{"layout":"month_view","theme":"dark"}'
+              className="min-h-[600px] rounded-xl overflow-hidden"
+            >
+              <iframe
+                src="https://cal.com/automix/30min?embed=true&theme=dark&layout=month_view"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                className="rounded-xl"
+                title="Schedule a meeting"
+              />
             </div>
           </div>
 
