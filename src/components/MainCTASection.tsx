@@ -42,17 +42,11 @@ const MainCTASection = () => {
           </div>
 
           {/* Cal.com Inline Embed */}
-          <div className="glass-card rounded-2xl p-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div 
-              id="cal-inline"
-              className="min-h-[600px] w-full rounded-xl"
-              style={{
-                width: '100%',
-                height: 'auto',
-                overflow: 'hidden'
-              }}
-            ></div>
-          </div>
+          <div 
+            id="cal-inline"
+            className="min-h-[600px] w-full animate-fade-in"
+            style={{ animationDelay: '0.2s' }}
+          ></div>
 
           {/* Trust Indicators */}
           <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-foreground-muted animate-fade-in" style={{ animationDelay: '0.4s' }}>
