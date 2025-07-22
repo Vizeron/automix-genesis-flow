@@ -39,8 +39,8 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg glow-border"></div>
-              <span className="text-xl font-bold glow-text">Automix</span>
+              <img src="/lovable-uploads/1ab67bdf-d4f1-4a69-a584-f1010c9f6185.png" alt="OSMAutomation Logo" className="w-8 h-8" />
+              <span className="text-xl font-bold glow-text">OSMAutomation</span>
             </div>
 
             {/* Desktop Navigation */}
