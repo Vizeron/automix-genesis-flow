@@ -38,9 +38,8 @@ const Navigation = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center">
               <img src="/lovable-uploads/1ab67bdf-d4f1-4a69-a584-f1010c9f6185.png" alt="OSMAutomation Logo" className="w-8 h-8" />
-              <span className="text-xl font-bold glow-text">OSMAutomation</span>
             </div>
 
             {/* Desktop Navigation */}
