@@ -46,9 +46,8 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-48 bg-primary rounded-lg glow-border"></div>
-              <span className="text-2xl font-bold glow-text">Automix</span>
+            <div className="flex items-center mb-6">
+              <img src="/lovable-uploads/38fde807-a32f-494e-8d05-c570e17c602f.png" alt="Logo" className="w-40 h-15" />
             </div>
             <p className="text-foreground-secondary mb-6 max-w-md leading-relaxed">
               Transform your business operations with AI-powered automation. 
