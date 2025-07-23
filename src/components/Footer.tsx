@@ -31,8 +31,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg glow-border"></div>
-              <span className="text-2xl font-bold glow-text">Automix</span>
+              <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="OSMAutomation Logo" className="w-40 h-15" />
             </div>
             <p className="text-foreground-secondary mb-6 max-w-md leading-relaxed">
               Transform your business operations with AI-powered automation. 
