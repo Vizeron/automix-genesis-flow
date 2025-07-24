@@ -7,10 +7,7 @@ import VSLSection from '@/components/VSLSection';
 import MainCTASection from '@/components/MainCTASection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import FeaturesSection from '@/components/FeaturesSection';
-import WhyUsSection from '@/components/WhyUsSection';
-import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
-import FinalCTASection from '@/components/FinalCTASection';
 import Footer from '@/components/Footer';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
@@ -36,10 +33,7 @@ const Index = () => {
         <MainCTASection />
         <HowItWorksSection />
         <FeaturesSection />
-        <WhyUsSection />
-        <PricingSection />
         <FAQSection />
-        <FinalCTASection />
       </main>
       <Footer />
     </div>
