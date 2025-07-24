@@ -28,7 +28,7 @@ const WhyUsSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
             Why Choose 
-            <span className="text-primary">OSMAutomation?</span>
+            <span className="text-primary"> OSMAutomation?</span>
           </h2>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto mb-8">
             We're not just another automation agency. We're your strategic partner in building 
