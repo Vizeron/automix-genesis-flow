@@ -56,7 +56,8 @@ const FeaturedInSection = () => {
                 <img 
                   src={tool.logo} 
                   alt={`${tool.name} logo`}
-                  className="h-8 w-auto brightness-0 invert"
+                  className="h-8 w-auto"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
                 <span className="text-foreground-secondary font-medium whitespace-nowrap">{tool.name}</span>
               </div>)}
