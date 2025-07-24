@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 const MainCTASection = () => {
   useEffect(() => {
     // Cal.com inline embed script
@@ -16,7 +15,6 @@ const MainCTASection = () => {
       Cal.ns["30min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#1a9c00"},"dark":{"cal-brand":"#55ffaa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     `;
     document.head.appendChild(script);
-
     return () => {
       // Cleanup script on unmount
       const existingScript = document.head.querySelector('script[type="text/javascript"]');
@@ -25,9 +23,7 @@ const MainCTASection = () => {
       }
     };
   }, []);
-
-  return (
-    <section id="contact" className="py-20 bg-background-secondary/30">
+  return <section id="contact" className="py-20 bg-background-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12 animate-fade-in">
@@ -42,14 +38,14 @@ const MainCTASection = () => {
           </div>
 
           {/* Cal.com Inline Embed */}
-          <div 
-            id="cal-inline"
-            className="min-h-[600px] w-full animate-fade-in"
-            style={{ animationDelay: '0.2s' }}
-          ></div>
+          <div id="cal-inline" className="min-h-[600px] w-full animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}></div>
 
           {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-foreground-muted animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-foreground-muted animate-fade-in" style={{
+          animationDelay: '0.4s'
+        }}>
             <div className="flex items-center space-x-2">
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               <span>Free 30-minute audit</span>
@@ -65,8 +61,6 @@ const MainCTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default MainCTASection;
