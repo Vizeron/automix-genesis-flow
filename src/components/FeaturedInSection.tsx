@@ -53,12 +53,9 @@ const FeaturedInSection = () => {
         <div className="relative">
           <div className="flex animate-scroll-right space-x-8">
             {tools.map((tool, index) => <div key={`${tool.name}-${index}`} className="flex items-center space-x-3 glass-card px-6 py-3 rounded-lg flex-shrink-0">
-                <img 
-                  src={tool.logo} 
-                  alt={`${tool.name} logo`}
-                  className="h-8 w-auto"
-                  style={{ filter: 'brightness(0) invert(1)' }}
-                />
+                <img src={tool.logo} alt={`${tool.name} logo`} style={{
+              filter: 'brightness(0) invert(1)'
+            }} className="h-8 " />
                 <span className="text-foreground-secondary font-medium whitespace-nowrap">{tool.name}</span>
               </div>)}
           </div>
