@@ -1,4 +1,4 @@
-import { EnvelopeSimple, LinkedinLogo, TwitterLogo, InstagramLogo } from '@phosphor-icons/react';
+import { EnvelopeSimple, LinkedinLogo, TwitterLogo, InstagramLogo, TelegramLogo, WhatsappLogo, DiscordLogo, FacebookLogo } from '@phosphor-icons/react';
 const Footer = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -29,16 +29,32 @@ const Footer = () => {
   }];
   const socialLinks = [{
     icon: LinkedinLogo,
-    href: '#',
+    href: 'https://www.linkedin.com/in/osmanabliazizov/',
     label: 'LinkedIn'
   }, {
     icon: TwitterLogo,
-    href: '#',
+    href: 'https://x.com/VizeronR',
     label: 'Twitter'
   }, {
     icon: InstagramLogo,
-    href: '#',
+    href: 'https://www.instagram.com/vizeron_mc/',
     label: 'Instagram'
+  }, {
+    icon: TelegramLogo,
+    href: 'https://t.me/vizeron',
+    label: 'Telegram'
+  }, {
+    icon: WhatsappLogo,
+    href: 'https://wa.me/380689856594',
+    label: 'WhatsApp'
+  }, {
+    icon: DiscordLogo,
+    href: 'https://discordapp.com/users/vizeron_',
+    label: 'Discord'
+  }, {
+    icon: FacebookLogo,
+    href: 'https://www.facebook.com/100028199482081',
+    label: 'Facebook'
   }];
   return <footer className="py-6 border-t border-border/30 bg-background-secondary/50 pb-8">
       <div className="container mx-auto px-6">
