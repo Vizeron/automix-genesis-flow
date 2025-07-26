@@ -54,28 +54,8 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
-          {/* Quick Links */}
-          <div className="order-1 md:order-2">
-            <h3 className="font-semibold mb-6 text-lg">Quick Links</h3>
-            <div className="space-y-4">
-              {footerLinks.map(link => <button key={link.label} onClick={() => scrollToSection(link.href)} className="block text-foreground-secondary hover:text-primary transition-colors duration-200">
-                  {link.label}
-                </button>)}
-            </div>
-          </div>
-
-          {/* Social & Legal */}
-          <div className="order-2 md:order-3">
-            <h3 className="font-semibold mb-6 text-lg">Connect</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
-                  <social.icon size={20} className="text-foreground-secondary group-hover:text-primary transition-colors duration-200" />
-                </a>)}
-            </div>
-          </div>
-
           {/* Brand */}
-          <div className="col-span-2 order-3 md:order-1 md:col-span-2">
+          <div className="col-span-2 order-1 md:order-1 md:col-span-2">
             <div className="flex items-center mb-6">
               <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="Logo" className="w-40 h-15" />
             </div>
@@ -86,6 +66,26 @@ const Footer = () => {
             <div className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex">
               <EnvelopeSimple size={16} className="text-primary" />
               <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="order-2 md:order-2">
+            <h3 className="font-semibold mb-6 text-lg">Quick Links</h3>
+            <div className="space-y-4">
+              {footerLinks.map(link => <button key={link.label} onClick={() => scrollToSection(link.href)} className="block text-foreground-secondary hover:text-primary transition-colors duration-200">
+                  {link.label}
+                </button>)}
+            </div>
+          </div>
+
+          {/* Social & Legal */}
+          <div className="order-3 md:order-3">
+            <h3 className="font-semibold mb-6 text-lg">Connect</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
+                  <social.icon size={20} className="text-foreground-secondary group-hover:text-primary transition-colors duration-200" />
+                </a>)}
             </div>
           </div>
         </div>
