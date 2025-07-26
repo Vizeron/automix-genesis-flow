@@ -55,7 +55,7 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
           {/* Quick Links */}
-          <div className="order-1 md:order-2">
+          <div>
             <h3 className="font-semibold mb-6 text-lg">Quick Links</h3>
             <div className="space-y-4">
               {footerLinks.map(link => <button key={link.label} onClick={() => scrollToSection(link.href)} className="block text-foreground-secondary hover:text-primary transition-colors duration-200">
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           {/* Social & Legal */}
-          <div className="order-2 md:order-3">
+          <div>
             <h3 className="font-semibold mb-6 text-lg">Connect</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           {/* Brand */}
-          <div className="col-span-2 order-3 md:order-1 md:col-span-2">
+          <div className="col-span-2 md:col-span-2">
             <div className="flex items-center mb-6">
               <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="Logo" className="w-40 h-15" />
             </div>
