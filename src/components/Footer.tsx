@@ -71,7 +71,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex">
               <EnvelopeSimple size={16} className="text-primary" />
-              <span className="text-foreground-secondary text-sm">hello@automix.agency</span>
+              <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
             </div>
           </div>
 
