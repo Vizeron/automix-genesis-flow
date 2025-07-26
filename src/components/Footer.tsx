@@ -18,12 +18,6 @@ const Footer = () => {
     label: 'Features',
     href: '#features'
   }, {
-    label: 'Case Studies',
-    href: '#case-studies'
-  }, {
-    label: 'Pricing',
-    href: '#pricing'
-  }, {
     label: 'Contact',
     href: '#contact'
   }];
@@ -94,14 +88,6 @@ const Footer = () => {
                 </a>)}
             </div>
             
-            <div className="space-y-3">
-              <a href="#" className="block text-foreground-secondary hover:text-primary transition-colors duration-200 text-sm">
-                Privacy Policy
-              </a>
-              <a href="#" className="block text-foreground-secondary hover:text-primary transition-colors duration-200 text-sm">
-                Terms of Service
-              </a>
-            </div>
           </div>
         </div>
 
