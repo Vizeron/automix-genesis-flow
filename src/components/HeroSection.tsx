@@ -42,38 +42,6 @@ const HeroSection = () => {
             </button>
           </div>
           
-          {/* 3D Floating Object */}
-          <div className="relative flex justify-center animate-fade-in" style={{
-          animationDelay: '0.6s'
-        }}>
-            <div className="relative">
-              {/* Main Cube */}
-              <div className="w-40 h-40 lg:w-60 lg:h-60 glass-card rounded-3xl transform rotate-12 animate-float">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-transparent rounded-3xl p-6 flex items-center justify-center">
-                  <div className="w-20 h-20 lg:w-32 lg:h-32 bg-primary/30 rounded-2xl glow-border animate-glow-pulse">
-                    <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center">
-                      <Play size={32} className="text-primary-foreground" weight="fill" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 glass-card rounded-2xl animate-float" style={{
-              animationDelay: '0.5s'
-            }}>
-                <div className="w-full h-full bg-primary/20 rounded-2xl"></div>
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 glass-card rounded-xl animate-float" style={{
-              animationDelay: '1.5s'
-            }}>
-                <div className="w-full h-full bg-primary-glow/30 rounded-xl"></div>
-              </div>
-              <div className="absolute top-8 -left-8 w-8 h-8 bg-primary rounded-full glow-border animate-float" style={{
-              animationDelay: '2s'
-            }}></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>;
