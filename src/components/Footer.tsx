@@ -63,10 +63,6 @@ const Footer = () => {
               Transform your business operations with AI-powered automation. 
               We design, build, and deploy custom workflows that save you 30+ hours per week.
             </p>
-            <div className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex">
-              <EnvelopeSimple size={16} className="text-primary" />
-              <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -82,12 +78,16 @@ const Footer = () => {
           {/* Social & Legal */}
           <div>
             <h3 className="font-semibold mb-6 text-lg">Connect</h3>
-            <div className="grid grid-cols-7 lg:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-7 lg:grid-cols-4 gap-4 mb-4">
               {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
                   <social.icon size={20} className="text-foreground-secondary group-hover:text-primary transition-colors duration-200" />
                 </a>)}
             </div>
             
+            <div className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex">
+              <EnvelopeSimple size={16} className="text-primary" />
+              <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
+            </div>
           </div>
         </div>
 
