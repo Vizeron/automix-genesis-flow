@@ -10,7 +10,7 @@ const VSLSection = () => {
     title: 'Scale Operations',
     description: 'Handle 10x more work without hiring additional staff'
   }];
-  return <section className="py-18 pb-14">
+  return <section className="py-20 pb-14">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Video Section */}
