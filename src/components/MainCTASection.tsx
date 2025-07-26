@@ -43,7 +43,7 @@ const MainCTASection = () => {
         }}></div>
 
           {/* Trust Indicators */}
-          <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-foreground-muted animate-fade-in" style={{
+          <div className="mt-4 flex flex-wrap justify-center gap-8 text-sm text-foreground-muted animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
             <div className="flex items-center space-x-2">
