@@ -28,7 +28,6 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <FeaturedInSection />
         <VSLSection />
         <MainCTASection />
         <HowItWorksSection />

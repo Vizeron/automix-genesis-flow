@@ -33,13 +33,40 @@ const HeroSection = () => {
           </p>
           
           {/* CTA Button */}
-          <div className="mb-16 animate-fade-in" style={{
+          <div className="mb-12 animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
             <button onClick={scrollToContact} className="neuro-button-primary px-8 py-4 rounded-lg text-lg font-medium inline-flex items-center space-x-2 group">
               <span>Book a Free Audit</span>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
             </button>
+          </div>
+
+          {/* Trusted Integrations Carousel */}
+          <div className="animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <p className="text-foreground-muted text-sm uppercase tracking-wide font-medium mb-8">
+              Trusted integrations with
+            </p>
+            <div className="relative overflow-hidden">
+              <div className="flex animate-scroll-right space-x-8">
+                {['/lovable-uploads/82069c66-9497-4f0d-87ec-450c4199c815.png',
+                '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
+                '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
+                '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png',
+                '/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png',
+                '/lovable-uploads/46924668-e381-455a-a20e-194914b6ed60.png',
+                '/lovable-uploads/f70251fe-b1d1-45af-ae27-73d025ac587f.png',
+                '/lovable-uploads/82069c66-9497-4f0d-87ec-450c4199c815.png',
+                '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
+                '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
+                '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png',
+                '/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png'].map((logoPath, index) => (
+                  <div key={`logo-${index}`} className="flex-shrink-0">
+                    <img src={logoPath} alt="Integration logo" className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           
         </div>
