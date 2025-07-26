@@ -16,7 +16,7 @@ const HeroSection = () => {
     }}></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-6xl mx-auto">
+        <div className="text-center max-w-8xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">
             The Modern
