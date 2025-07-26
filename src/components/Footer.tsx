@@ -110,9 +110,7 @@ const Footer = () => {
           <p className="text-foreground-muted text-sm">
             © 2024 Automix. All rights reserved.
           </p>
-          <p className="text-foreground-muted text-sm">
-            Built with precision and powered by automation
-          </p>
+          <p className="text-foreground-muted text-sm">Automate smarter. Grow faster.</p>
         </div>
       </div>
     </footer>;
