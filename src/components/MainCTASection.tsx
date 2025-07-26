@@ -23,8 +23,8 @@ const MainCTASection = () => {
       }
     };
   }, []);
-  return <section id="contact" className="py-20 bg-background-secondary/30">
-      <div className="container mx-auto px-6">
+  return <section id="contact" className="py-14 bg-background-secondary/30">
+      <div className="container mx-auto px6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">

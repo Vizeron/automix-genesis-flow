@@ -50,10 +50,10 @@ const Footer = () => {
     href: 'https://www.facebook.com/100028199482081',
     label: 'Facebook'
   }];
-  return <footer className="py-6 border-t border-border/30 bg-background-secondary/50 pb-8">
+  return <footer className="py-6 border-t border-border/30 bg-background-secondary/50 pb-6">
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-8">
           {/* Brand */}
           <div className="col-span-2 order-1 md:order-1 md:col-span-2">
             <div className="flex items-center mb-6">
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-foreground-muted text-sm">© 2024 OSMAutomation. All rights reserved.</p>
           <p className="text-foreground-muted text-sm">Automate smarter. Grow faster.</p>
         </div>
