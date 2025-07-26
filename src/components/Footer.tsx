@@ -53,9 +53,9 @@ const Footer = () => {
   return <footer className="py-6 border-t border-border/30 bg-background-secondary/50 pb-8">
       <div className="container mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="md:col-span-2">
             <div className="flex items-center mb-6">
               <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="Logo" className="w-40 h-15" />
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
           {/* Social & Legal */}
           <div>
             <h3 className="font-semibold mb-6 text-lg">Connect</h3>
-            <div className="grid grid-cols-7 lg:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
                   <social.icon size={20} className="text-foreground-secondary group-hover:text-primary transition-colors duration-200" />
                 </a>)}
