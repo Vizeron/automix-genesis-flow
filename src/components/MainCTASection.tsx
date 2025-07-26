@@ -25,7 +25,7 @@ const MainCTASection = () => {
   }, []);
   return <section id="contact" className="py-14 bg-background-secondary/30">
       <div className="container mx-auto px6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center ">
           <div className="mb-6 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
               Let's Automate
