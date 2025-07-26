@@ -107,9 +107,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-foreground-muted text-sm">
-            © 2024 Automix. All rights reserved.
-          </p>
+          <p className="text-foreground-muted text-sm">© 2024 OSMAutomation. All rights reserved.</p>
           <p className="text-foreground-muted text-sm">Automate smarter. Grow faster.</p>
         </div>
       </div>
