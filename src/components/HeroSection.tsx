@@ -8,14 +8,14 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="hero" className="py-24 min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section id="hero" className="py-24 min-h-screen flex items-center justify-center relative overflow-hidden pb-0">
       {/* Background Glow Effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/5 rounded-full blur-3xl animate-float" style={{
       animationDelay: '1s'
     }}></div>
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 ">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">
