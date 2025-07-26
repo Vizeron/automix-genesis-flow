@@ -15,7 +15,7 @@ const HeroSection = () => {
       animationDelay: '1s'
     }}></div>
       
-      <div className="container mx-auto px-6 relative z-10 ">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">

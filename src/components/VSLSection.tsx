@@ -1,23 +1,16 @@
 import { CheckCircle } from '@phosphor-icons/react';
-
 const VSLSection = () => {
-  const benefits = [
-    {
-      title: 'Save 30+ Hours Weekly',
-      description: 'Automate repetitive tasks and focus on what matters most'
-    },
-    {
-      title: 'Reduce Human Error',
-      description: 'Eliminate mistakes with precision-built workflows'
-    },
-    {
-      title: 'Scale Operations',
-      description: 'Handle 10x more work without hiring additional staff'
-    }
-  ];
-
-  return (
-    <section className="py-20">
+  const benefits = [{
+    title: 'Save 30+ Hours Weekly',
+    description: 'Automate repetitive tasks and focus on what matters most'
+  }, {
+    title: 'Reduce Human Error',
+    description: 'Eliminate mistakes with precision-built workflows'
+  }, {
+    title: 'Scale Operations',
+    description: 'Handle 10x more work without hiring additional staff'
+  }];
+  return <section className="py-18 pb-14">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Video Section */}
@@ -40,7 +33,9 @@ const VSLSection = () => {
           </div>
 
           {/* Benefits Section */}
-          <div className="space-y-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-8 animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
                 Why Choose 
@@ -52,25 +47,19 @@ const VSLSection = () => {
             </div>
 
             <div className="space-y-6">
-              {benefits.map((benefit, index) => (
-                <div
-                  key={benefit.title}
-                  className="flex items-start space-x-4 glass-card p-6 rounded-xl animate-fade-in"
-                  style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                >
+              {benefits.map((benefit, index) => <div key={benefit.title} className="flex items-start space-x-4 glass-card p-6 rounded-xl animate-fade-in" style={{
+              animationDelay: `${0.4 + index * 0.1}s`
+            }}>
                   <CheckCircle size={24} className="text-primary mt-1 flex-shrink-0" weight="fill" />
                   <div>
                     <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
                     <p className="text-foreground-secondary">{benefit.description}</p>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default VSLSection;
