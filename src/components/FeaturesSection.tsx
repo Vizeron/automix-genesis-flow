@@ -1,13 +1,13 @@
-import { Code, Plugs, Robot, Bell } from '@phosphor-icons/react';
+import { Gear, Phone, Robot, Magnet } from '@phosphor-icons/react';
 const FeaturesSection = () => {
   const features = [{
     title: 'Automations',
     description: 'Streamline your dental practice with custom automated workflows',
-    icon: Code
+    icon: Gear
   }, {
     title: 'Voice Agents',
     description: 'AI-powered phone assistants that handle calls and appointments',
-    icon: Bell
+    icon: Phone
   }, {
     title: 'AI Agents',
     description: 'Intelligent chatbots for patient communication and support',
@@ -15,7 +15,7 @@ const FeaturesSection = () => {
   }, {
     title: 'Lead Generators',
     description: 'Advanced systems to attract and convert potential patients',
-    icon: Plugs
+    icon: Magnet
   }];
   return <section id="features" className="py-12 pb-14">
       <div className="container mx-auto px-6">
