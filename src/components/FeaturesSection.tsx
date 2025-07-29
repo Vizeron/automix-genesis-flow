@@ -1,31 +1,32 @@
 import { Code, Plugs, Robot, Bell } from '@phosphor-icons/react';
 const FeaturesSection = () => {
   const features = [{
-    title: 'Automations',
-    description: 'Streamline your dental practice with custom automated workflows',
+    title: 'No-Code Setup',
+    description: 'Visual workflow builder that requires zero coding knowledge',
     icon: Code
   }, {
-    title: 'Voice Agents',
-    description: 'AI-powered phone assistants that handle calls and appointments',
-    icon: Bell
+    title: 'Custom Integrations',
+    description: 'Connect any tool or platform with our extensive API library',
+    icon: Plugs
   }, {
-    title: 'AI Agents',
-    description: 'Intelligent chatbots for patient communication and support',
+    title: 'AI-Powered Logic',
+    description: 'Smart decision-making with advanced AI and machine learning',
     icon: Robot
   }, {
-    title: 'Lead Generators',
-    description: 'Advanced systems to attract and convert potential patients',
-    icon: Plugs
+    title: 'Monitoring & Alerts',
+    description: 'Real-time monitoring with instant notifications and error handling',
+    icon: Bell
   }];
   return <section id="features" className="py-12 pb-14">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
-            Powerful 
-            <span className="text-primary "> Services</span>
+            Our 
+            <span className="text-primary">Services</span>
           </h2>
-          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">We leverage cutting-edge AI automation to fill your dental practice
-with qualified patients.</p>
+          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
+            Everything you need to build, deploy, and manage world-class automation workflows
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
