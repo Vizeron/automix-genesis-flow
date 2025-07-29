@@ -21,12 +21,11 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
-            Our 
-            <span className="text-primary">Services</span>
+            Powerful 
+            <span className="text-primary "> Services</span>
           </h2>
-          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
-            Everything you need to build, deploy, and manage world-class automation workflows
-          </p>
+          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">We leverage cutting-edge AI automation to fill your dental practice
+with qualified patients.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
