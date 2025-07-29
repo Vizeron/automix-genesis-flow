@@ -38,7 +38,7 @@ const VSLSection = () => {
         }}>
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
-                Why Choose 
+                Why Choose{" "}
                 <span className="text-primary">OSMAutomation?</span>
               </h2>
               <p className="text-xl text-foreground-secondary">
