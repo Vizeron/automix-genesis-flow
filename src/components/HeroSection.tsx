@@ -19,9 +19,7 @@ const HeroSection = () => {
         <div className="text-center max-w-8xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">
-            The Modern
-            <br />
-            <span className="text-primary">Automation</span> Platform
+            We Fill Your Schedule While You Focus On <span className="text-primary">Teeth</span>
           </h1>
           
           {/* Subheading */}
