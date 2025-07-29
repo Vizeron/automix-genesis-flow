@@ -39,7 +39,7 @@ const VSLSection = () => {
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
                 Why Choose 
-                <span className="text-primary"> Automation?</span>
+                <span className="text-primary">OSMAutomation?</span>
               </h2>
               <p className="text-xl text-foreground-secondary">
                 Transform your business operations with our proven automation strategies
