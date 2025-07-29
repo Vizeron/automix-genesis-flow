@@ -1,21 +1,21 @@
 import { Code, Plugs, Robot, Bell } from '@phosphor-icons/react';
 const FeaturesSection = () => {
   const features = [{
-    title: 'No-Code Setup',
-    description: 'Visual workflow builder that requires zero coding knowledge',
+    title: 'Automations',
+    description: 'Streamline your dental practice with custom automated workflows',
     icon: Code
   }, {
-    title: 'Custom Integrations',
-    description: 'Connect any tool or platform with our extensive API library',
-    icon: Plugs
+    title: 'Voice Agents',
+    description: 'AI-powered phone assistants that handle calls and appointments',
+    icon: Bell
   }, {
-    title: 'AI-Powered Logic',
-    description: 'Smart decision-making with advanced AI and machine learning',
+    title: 'AI Agents',
+    description: 'Intelligent chatbots for patient communication and support',
     icon: Robot
   }, {
-    title: 'Monitoring & Alerts',
-    description: 'Real-time monitoring with instant notifications and error handling',
-    icon: Bell
+    title: 'Lead Generators',
+    description: 'Advanced systems to attract and convert potential patients',
+    icon: Plugs
   }];
   return <section id="features" className="py-12 pb-14">
       <div className="container mx-auto px-6">
