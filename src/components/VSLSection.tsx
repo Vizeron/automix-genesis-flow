@@ -1,14 +1,14 @@
 import { CheckCircle } from '@phosphor-icons/react';
 const VSLSection = () => {
   const benefits = [{
-    title: 'Save 30+ Hours Weekly',
-    description: 'Automate repetitive tasks and focus on what matters most'
+    title: 'Zero Learning Curve',
+    description: 'We don\'t hand you software and say "good luck." We build, deploy, and manage everything while you focus on dentistry.'
   }, {
-    title: 'Reduce Human Error',
-    description: 'Eliminate mistakes with precision-built workflows'
+    title: 'Dental-Specific Intelligence',
+    description: 'Our AI knows dental terminology, insurance processes, and patient concerns. It doesn\'t sound like a generic chatbot.'
   }, {
-    title: 'Scale Operations',
-    description: 'Handle 10x more work without hiring additional staff'
+    title: 'Complete Patient Journey',
+    description: 'From first website visit to treatment completion, we automate every touchpoint. Nothing falls through the cracks.'
   }];
   return <section className="py-10 pb-14">
       <div className="container mx-auto px-6">
@@ -38,12 +38,11 @@ const VSLSection = () => {
         }}>
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
-                Why Choose{" "}
-                <span className="text-primary">
-AI Solutions?</span>
+                Why Choose Our{" "}
+                <span className="text-primary">AI Solutions?</span>
               </h2>
               <p className="text-xl text-foreground-secondary">
-                Transform your business operations with our proven automation strategies
+                What makes our approach different (and more profitable)
               </p>
             </div>
 
