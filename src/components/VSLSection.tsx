@@ -1,14 +1,14 @@
 import { CheckCircle } from '@phosphor-icons/react';
 const VSLSection = () => {
   const benefits = [{
-    title: 'Save 30+ Hours Weekly',
-    description: 'Automate repetitive tasks and focus on what matters most'
+    title: 'Never Miss Another Call',
+    description: 'Our AI receptionist captures every lead 24/7, even when your office is closed'
   }, {
-    title: 'Reduce Human Error',
-    description: 'Eliminate mistakes with precision-built workflows'
+    title: 'Fill Your Schedule Faster',
+    description: 'Convert more inquiries into booked appointments with intelligent patient communication'
   }, {
-    title: 'Scale Operations',
-    description: 'Handle 10x more work without hiring additional staff'
+    title: 'Focus on Patient Care',
+    description: 'Spend less time on admin work and more time on what you do best - dentistry'
   }];
   return <section className="py-10 pb-14">
       <div className="container mx-auto px-6">
@@ -38,11 +38,11 @@ const VSLSection = () => {
         }}>
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
-                Why Choose{" "}
-                <span className="text-primary">OSMAutomation?</span>
+                Why Choose Our{" "}
+                <span className="text-primary">AI Solutions?</span>
               </h2>
               <p className="text-xl text-foreground-secondary">
-                Transform your business operations with our proven automation strategies
+                Transform your dental practice with proven AI automation that fills your schedule while you focus on teeth
               </p>
             </div>
 
