@@ -60,10 +60,10 @@ const Footer = () => {
               <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="Logo" className="w-40 h-15" />
             </div>
             <p className="text-foreground-secondary mb-6 max-w-md leading-relaxed">We turn your biggest time-wasters into automated profit centers. Custom-built systems that work 24/7 so you don't have to.</p>
-            <div className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex">
+            <a href="mailto:osmautomation@gmail.com" className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex hover:scale-105 transition-transform duration-200 cursor-pointer">
               <EnvelopeSimple size={16} className="text-primary" />
               <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
-            </div>
+            </a>
           </div>
 
           {/* Quick Links */}
