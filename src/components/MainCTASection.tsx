@@ -38,7 +38,7 @@ const MainCTASection = () => {
           </div>
 
           {/* Cal.com Inline Embed */}
-          <div id="cal-inline" className="min-h-[400px] md:min-h-[600px] w-full animate-fade-in" style={{
+          <div id="cal-inline" className="min-h-[600px] w-full animate-fade-in" style={{
           animationDelay: '0.2s'
         }}></div>
 
