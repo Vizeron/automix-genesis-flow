@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="text-center max-w-8xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">
-            We Fill Your Schedule While You <br className="hidden md:block" /><span className="text-primary">Focus On Teeth</span>
+            We Fill Your Schedule While <br className="hidden lg:block" />You <span className="text-primary">Focus On Teeth</span>
           </h1>
           
           {/* Subheading */}
