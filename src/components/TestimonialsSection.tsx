@@ -3,7 +3,7 @@ import { CaretLeft, CaretRight, Quotes } from '@phosphor-icons/react';
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [{
-    quote: "Automix transformed our entire operations. What used to take our team 3 days now happens automatically in minutes.",
+    quote: "OSMAutomation transformed our entire operations. What used to take our team 3 days now happens automatically in minutes.",
     result: "Saved 40+ hours per week",
     name: "Sarah Chen",
     role: "Operations Director",
