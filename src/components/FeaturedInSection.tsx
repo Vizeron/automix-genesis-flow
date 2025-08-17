@@ -1,39 +1,43 @@
 const FeaturedInSection = () => {
-  const tools = ['/lovable-uploads/82069c66-9497-4f0d-87ec-450c4199c815.png',
-  // Zapier
-  '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
-  // Make
-  '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
-  // n8n
-  '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png',
-  // Airtable
-  '/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png',
+  const tools = ['/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png',
   // OpenAI
-  '/lovable-uploads/46924668-e381-455a-a20e-194914b6ed60.png',
-  // Slack
-  '/lovable-uploads/f70251fe-b1d1-45af-ae27-73d025ac587f.png',
-  // Vapi
   '/lovable-uploads/989335b4-354f-441a-aad5-6d9467bdc8a8.png',
   // Dentrix
+  '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
+  // Make
+  '/lovable-uploads/46924668-e381-455a-a20e-194914b6ed60.png',
+  // Slack
   '/lovable-uploads/0da9a19f-1110-4347-bc43-4776dc7d155a.png',
   // OpenDental
+  '/lovable-uploads/82069c66-9497-4f0d-87ec-450c4199c815.png',
+  // Zapier
+  '/lovable-uploads/32099df2-8708-4919-a5a5-3796476f8e96.png',
+  // Eaglesoft
+  '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
+  // n8n
+  '/lovable-uploads/f70251fe-b1d1-45af-ae27-73d025ac587f.png',
+  // Vapi
+  '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png',
+  // Airtable
+  '/lovable-uploads/46924668-e381-455a-a20e-194914b6ed60.png',
+  // Slack
+  '/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png',
+  // OpenAI
+  '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
+  // n8n
   '/lovable-uploads/32099df2-8708-4919-a5a5-3796476f8e96.png',
   // Eaglesoft
   '/lovable-uploads/82069c66-9497-4f0d-87ec-450c4199c815.png',
   // Zapier
-  '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
-  // Make
-  '/lovable-uploads/69a6f9b5-7bdd-4abd-8eda-02dbace0092f.png',
-  // n8n
-  '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png',
-  // Airtable
-  '/lovable-uploads/f12c8ebc-17fe-45e3-b4ba-71bc05cc9ee5.png',
-  // OpenAI
-  '/lovable-uploads/989335b4-354f-441a-aad5-6d9467bdc8a8.png',
-  // Dentrix
   '/lovable-uploads/0da9a19f-1110-4347-bc43-4776dc7d155a.png',
   // OpenDental
-  '/lovable-uploads/32099df2-8708-4919-a5a5-3796476f8e96.png' // Eaglesoft
+  '/lovable-uploads/31bf2b70-3166-43b7-92a2-76c544aedb30.png',
+  // Make
+  '/lovable-uploads/989335b4-354f-441a-aad5-6d9467bdc8a8.png',
+  // Dentrix
+  '/lovable-uploads/f70251fe-b1d1-45af-ae27-73d025ac587f.png',
+  // Vapi
+  '/lovable-uploads/08acc40c-edad-4def-9b89-e6021c3de26b.png' // Airtable
   ];
   return <section className="py-0 border-b border-border/30 overflow-hidden">
       <div className="container mx-auto px-6">
