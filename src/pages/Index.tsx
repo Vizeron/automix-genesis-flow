@@ -28,6 +28,7 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
+        <FeaturedInSection />
         <FeaturesSection />
         <HowItWorksSection />
         <VSLSection />
