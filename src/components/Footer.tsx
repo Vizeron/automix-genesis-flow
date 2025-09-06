@@ -45,10 +45,6 @@ const Footer = () => {
     icon: DiscordLogo,
     href: 'https://discordapp.com/users/vizeron_',
     label: 'Discord'
-  }, {
-    icon: FacebookLogo,
-    href: 'https://www.facebook.com/100028199482081',
-    label: 'Facebook'
   }];
   return <footer className="py-6 border-t border-border/30 bg-background-secondary/50 pb-6">
       <div className="container mx-auto px-6">
