@@ -16,16 +16,17 @@ const VSLSection = () => {
           {/* Video Section */}
           <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
-              <div className="aspect-video">
+              <div style={{padding:"56.26% 0 0 0", position:"relative"}}>
                 <iframe 
-                  src="https://player.vimeo.com/video/1116850556?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                  className="w-full h-full rounded-lg" 
+                  src="https://player.vimeo.com/video/1116850556?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" 
                   frameBorder="0" 
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
-                  title="VSL Video"
+                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                  title="Vsl"
                 />
               </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
               
               {/* Video Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
