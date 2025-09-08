@@ -22,14 +22,10 @@ const VSLSection = () => {
                   frameBorder="0" 
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
-                  style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+                  className="absolute top-0 left-0 w-full h-full"
                   title="Vsl"
                 />
               </div>
-              <script src="https://player.vimeo.com/api/player.js"></script>
-              
-              {/* Video Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent"></div>
             </div>
           </div>
 
