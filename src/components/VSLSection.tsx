@@ -17,10 +17,12 @@ const VSLSection = () => {
           <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
               <div className="aspect-video">
-                <iframe
-                  src="https://avizeron.wistia.com/medias/7ybwxn0wx0?embedType=web_component&seo=false&videoWidth=960"
-                  className="w-full h-full rounded-lg"
-                  allowFullScreen
+                <iframe 
+                  src="https://player.vimeo.com/video/1116850556?badge=0&autopause=0&player_id=0&app_id=58479" 
+                  className="w-full h-full rounded-lg" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
                   title="VSL Video"
                 />
               </div>
