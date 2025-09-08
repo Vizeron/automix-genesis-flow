@@ -18,7 +18,7 @@ const VSLSection = () => {
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
               <div className="aspect-video">
                 <iframe 
-                  src="https://player.vimeo.com/video/1116850556?badge=0&autopause=0&player_id=0&app_id=58479" 
+                  src="https://player.vimeo.com/video/1116850556?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
                   className="w-full h-full rounded-lg" 
                   frameBorder="0" 
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
