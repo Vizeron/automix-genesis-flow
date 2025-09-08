@@ -17,10 +17,11 @@ const VSLSection = () => {
           <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
               <div className="aspect-video">
-                <div 
-                  dangerouslySetInnerHTML={{
-                    __html: '<wistia-player media-id="7ybwxn0wx0" aspect="1.7777777777777777" class="w-full h-full"></wistia-player>'
-                  }}
+                <iframe
+                  src="https://avizeron.wistia.com/medias/7ybwxn0wx0?embedType=web_component&seo=false&videoWidth=960"
+                  className="w-full h-full rounded-lg"
+                  allowFullScreen
+                  title="VSL Video"
                 />
               </div>
               
