@@ -16,15 +16,12 @@ const VSLSection = () => {
           {/* Video Section */}
           <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
-              <div className="aspect-video bg-background-secondary flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 glow-border">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <div className="w-0 h-0 border-l-4 border-l-primary-foreground border-y-4 border-y-transparent ml-1"></div>
-                    </div>
-                  </div>
-                  <p className="text-foreground-muted">Demo Video Coming Soon</p>
-                </div>
+              <div className="aspect-video">
+                <div 
+                  dangerouslySetInnerHTML={{
+                    __html: '<wistia-player media-id="7ybwxn0wx0" aspect="1.7777777777777777" class="w-full h-full"></wistia-player>'
+                  }}
+                />
               </div>
               
               {/* Video Overlay */}
