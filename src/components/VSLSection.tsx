@@ -1,9 +1,5 @@
 import { CheckCircle } from '@phosphor-icons/react';
-import { useEffect, useRef, useState } from 'react';
-
 const VSLSection = () => {
-  const [shouldAutoplay, setShouldAutoplay] = useState(false);
-  const videoRef = useRef<HTMLDivElement>(null);
   const benefits = [{
     title: 'Zero Learning Curve',
     description: 'We don\'t hand you software and say "good luck." We build, deploy, and manage everything while you focus on dentistry.'
@@ -14,34 +10,15 @@ const VSLSection = () => {
     title: 'Complete Patient Journey',
     description: 'From first website visit to treatment completion, we automate every touchpoint. Nothing falls through the cracks.'
   }];
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !shouldAutoplay) {
-            setShouldAutoplay(true);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [shouldAutoplay]);
   return <section className="py-10 pb-14">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Video Section */}
-          <div className="animate-fade-in" ref={videoRef}>
+          <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
               <div style={{padding:"56.26% 0 0 0", position:"relative"}}>
                 <iframe 
-                  src={`https://player.vimeo.com/video/1116850556?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=${shouldAutoplay ? '1' : '0'}&loop=1`}
+                  src="https://player.vimeo.com/video/1116850556?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" 
                   frameBorder="0" 
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                   referrerPolicy="strict-origin-when-cross-origin" 
