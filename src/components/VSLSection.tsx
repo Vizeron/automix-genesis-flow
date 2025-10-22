@@ -1,4 +1,4 @@
-import { CheckCircle } from '@phosphor-icons/react';
+import { CheckCircle, VideoCamera } from '@phosphor-icons/react';
 const VSLSection = () => {
   const benefits = [{
     title: 'Zero Learning Curve',
@@ -16,7 +16,8 @@ const VSLSection = () => {
           {/* Video Section */}
           <div className="animate-fade-in">
             <div className="relative glass-card rounded-2xl overflow-hidden glow-border aspect-video flex items-center justify-center">
-              <div className="text-center">
+              <div className="text-center space-y-4">
+                <VideoCamera size={64} className="text-primary mx-auto" weight="fill" />
                 <p className="text-2xl font-semibold text-foreground-secondary">Coming Soon</p>
               </div>
             </div>
