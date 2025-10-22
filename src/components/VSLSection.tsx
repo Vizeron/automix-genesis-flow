@@ -2,20 +2,38 @@ import { CheckCircle } from '@phosphor-icons/react';
 const VSLSection = () => {
   const benefits = [{
     title: 'Zero Learning Curve',
-    description: 'We don\'t just hand you software and wish you luck. We build, launch, and manage everything — while you focus on running your business and serving customers.'
+    description: 'We don\'t hand you software and say "good luck." We build, deploy, and manage everything while you focus on dentistry.'
   }, {
-    title: 'Industry-Specific Intelligence',
-    description: 'Our AI understands home service calls — from leak repairs and HVAC tune-ups to deep cleanings. It sounds natural, handles real customer questions, and knows how to book the right job every time.'
+    title: 'Dental-Specific Intelligence',
+    description: 'Our AI knows dental terminology, insurance processes, and patient concerns. It doesn\'t sound like a generic chatbot.'
   }, {
-    title: 'Complete Customer Journey',
-    description: 'From the first call or website visit to job completion and follow-up, our automations cover every touchpoint. No more lost leads, missed appointments, or forgotten follow-ups.'
+    title: 'Complete Patient Journey',
+    description: 'From first website visit to treatment completion, we automate every touchpoint. Nothing falls through the cracks.'
   }];
   return <section className="py-10 pb-14">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Video Section */}
+          <div className="animate-fade-in">
+            <div className="relative glass-card rounded-2xl overflow-hidden glow-border">
+              <div style={{padding:"56.26% 0 0 0", position:"relative"}}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1116850556?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=0&amp;loop=1" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  className="absolute top-0 left-0 w-full h-full"
+                  title="Vsl"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Benefits Section */}
-          <div className="space-y-8 animate-fade-in">
-            <div className="text-center">
+          <div className="space-y-8 animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
+            <div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
                 Why Choose Our{" "}
                 <span className="text-primary">AI Solutions?</span>
@@ -27,7 +45,7 @@ const VSLSection = () => {
 
             <div className="space-y-6">
               {benefits.map((benefit, index) => <div key={benefit.title} className="flex items-start space-x-4 glass-card p-6 rounded-xl animate-fade-in" style={{
-              animationDelay: `${0.2 + index * 0.1}s`
+              animationDelay: `${0.4 + index * 0.1}s`
             }}>
                   <CheckCircle size={24} className="text-primary mt-1 flex-shrink-0" weight="fill" />
                   <div>
