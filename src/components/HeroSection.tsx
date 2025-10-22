@@ -25,7 +25,7 @@ const HeroSection = () => {
           {/* Subheading */}
           <p className="text-xl lg:text-2xl text-foreground-secondary mb-8 max-w-3xl mx-auto animate-fade-in" style={{
           animationDelay: '0.2s'
-        }}>Stop losing patients to busy signals and missed calls. Our 24/7 AI receptionist captures every lead and converts them into booked appointments while you're focused on what matters most.</p>
+        }}>Stop losing jobs to missed calls and after-hours inquiries. Our 24/7 AI voice agent answers, qualifies, and books new customers — so you never miss another opportunity.</p>
           
           {/* CTA Button */}
           <div className="mb-12 animate-fade-in" style={{
