@@ -1,4 +1,4 @@
-import { EnvelopeSimple, LinkedinLogo, TwitterLogo, InstagramLogo, TelegramLogo, WhatsappLogo, DiscordLogo, FacebookLogo } from '@phosphor-icons/react';
+import { EnvelopeSimple, LinkedinLogo, TwitterLogo, InstagramLogo, TelegramLogo, WhatsappLogo, DiscordLogo, FacebookLogo, Phone } from '@phosphor-icons/react';
 const Footer = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -56,10 +56,22 @@ const Footer = () => {
               <img src="/lovable-uploads/d85d909e-0dcc-4c1e-8948-4e6e13075421.png" alt="Logo" className="w-40 h-15" />
             </div>
             <p className="text-foreground-secondary mb-6 max-w-md leading-relaxed">We turn your biggest time-wasters into automated profit centers. Custom-built systems that work 24/7 so you don't have to.</p>
-            <a href="mailto:osmautomation@gmail.com" className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex hover:scale-105 transition-transform duration-200 cursor-pointer">
-              <EnvelopeSimple size={16} className="text-primary" />
-              <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
-            </a>
+            <div className="space-y-3">
+              <a href="mailto:osmautomation@gmail.com" className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex hover:scale-105 transition-transform duration-200 cursor-pointer">
+                <EnvelopeSimple size={16} className="text-primary" />
+                <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
+              </a>
+              <div className="flex flex-col space-y-2">
+                <a href="tel:+353873833294" className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex hover:scale-105 transition-transform duration-200 cursor-pointer">
+                  <Phone size={16} className="text-primary" weight="fill" />
+                  <span className="text-foreground-secondary text-sm">+353 87 383 3294</span>
+                </a>
+                <a href="tel:+383873838906" className="flex items-center space-x-2 glass-card p-3 rounded-lg inline-flex hover:scale-105 transition-transform duration-200 cursor-pointer">
+                  <Phone size={16} className="text-primary" weight="fill" />
+                  <span className="text-foreground-secondary text-sm">+383 87 383 8906</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
