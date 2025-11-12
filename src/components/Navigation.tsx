@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { List, X, Phone } from '@phosphor-icons/react';
+import { List, X } from '@phosphor-icons/react';
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,19 +48,6 @@ const Navigation = () => {
                 </button>)}
             </div>
 
-            {/* Phone Numbers */}
-            <div className="hidden lg:flex items-center space-x-4">
-              <a href="tel:+353873833294" className="flex items-center space-x-2 text-foreground-secondary hover:text-primary transition-colors duration-200">
-                <Phone size={16} weight="fill" />
-                <span className="text-sm">+353 87 383 3294</span>
-              </a>
-              <span className="text-foreground-muted">|</span>
-              <a href="tel:+383873838906" className="flex items-center space-x-2 text-foreground-secondary hover:text-primary transition-colors duration-200">
-                <Phone size={16} weight="fill" />
-                <span className="text-sm">+383 87 383 8906</span>
-              </a>
-            </div>
-
             {/* CTA Button */}
             <div className="hidden lg:block">
               <button onClick={() => scrollToSection('#contact')} className="neuro-button-primary px-6 py-2.5 rounded-lg text-sm font-medium">
@@ -85,16 +72,6 @@ const Navigation = () => {
                 {navItems.map(item => <button key={item.label} onClick={() => scrollToSection(item.href)} className="block w-full text-left text-lg text-foreground hover:text-primary transition-colors duration-200">
                     {item.label}
                   </button>)}
-                <div className="pt-4 border-t border-border space-y-3">
-                  <a href="tel:+353873833294" className="flex items-center space-x-2 text-foreground-secondary hover:text-primary transition-colors duration-200">
-                    <Phone size={18} weight="fill" />
-                    <span>+353 87 383 3294</span>
-                  </a>
-                  <a href="tel:+383873838906" className="flex items-center space-x-2 text-foreground-secondary hover:text-primary transition-colors duration-200">
-                    <Phone size={18} weight="fill" />
-                    <span>+383 87 383 8906</span>
-                  </a>
-                </div>
                 <div className="pt-4 border-t border-border">
                   <button onClick={() => scrollToSection('#contact')} className="w-full neuro-button-primary px-6 py-3 rounded-lg font-medium">
                     Book Free Audit
