@@ -15,11 +15,14 @@ const VSLSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Video Section */}
           <div className="animate-fade-in">
-            <div className="relative glass-card rounded-2xl overflow-hidden glow-border aspect-video flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <VideoCamera size={64} className="text-primary mx-auto" weight="fill" />
-                <p className="text-2xl font-semibold text-foreground-secondary">Coming Soon</p>
-              </div>
+            <div className="relative glass-card rounded-2xl overflow-hidden glow-border aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/kgv__Uw0u1I"
+                title="OSM Automation Video"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
 
