@@ -21,10 +21,10 @@ const HowItWorksSection = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
             How It 
-            <span className="text-primary"> Works</span>
+            <span className="text-primary"> Worked Previously</span>
           </h2>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
-            Our proven 3-step process to transform your business operations
+            This process is no longer active and is shown for informational purposes only.
           </p>
         </div>
 
@@ -56,19 +56,6 @@ const HowItWorksSection = () => {
             </div>)}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16 animate-fade-in" style={{
-        animationDelay: '0.6s'
-      }}>
-          <button onClick={() => {
-          const element = document.querySelector('#contact');
-          if (element) element.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }} className="neuro-button-primary px-8 py-4 rounded-lg text-lg font-medium">
-            Start Your Automation Journey
-          </button>
-        </div>
       </div>
     </section>;
 };
