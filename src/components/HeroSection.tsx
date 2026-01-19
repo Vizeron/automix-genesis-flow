@@ -1,13 +1,4 @@
-import { ArrowRight, Play } from '@phosphor-icons/react';
 const HeroSection = () => {
-  const scrollToContact = () => {
-    const element = document.querySelector('#contact');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
   return <section id="hero" className="py-24 min-h-screen flex items-center justify-center relative overflow-hidden pb-0">
       {/* Background Glow Effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
@@ -27,14 +18,13 @@ const HeroSection = () => {
           animationDelay: '0.2s'
         }}>Stop losing jobs to missed calls and after-hours inquiries. Our 24/7 AI voice agent answers, qualifies, and books new customers so you never miss another opportunity.</p>
           
-          {/* CTA Button */}
+          {/* Unavailable Notice */}
           <div className="mb-12 animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
-            <button onClick={scrollToContact} className="neuro-button-primary px-8 py-4 rounded-lg text-lg font-medium inline-flex items-center space-x-2 group">
-              <span>Book a Free Audit</span>
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
+            <div className="glass-card px-8 py-4 rounded-lg text-lg font-medium inline-flex items-center space-x-2 text-foreground-muted">
+              <span>Services are currently unavailable.</span>
+            </div>
           </div>
 
           {/* Trusted Integrations Carousel */}

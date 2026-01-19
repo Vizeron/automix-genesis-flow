@@ -57,19 +57,19 @@ const Footer = () => {
             </div>
             <p className="text-foreground-secondary mb-6 max-w-md leading-relaxed">We turn your biggest time-wasters into automated profit centers. Custom-built systems that work 24/7 so you don't have to.</p>
             <div className="space-y-3">
-              <a href="mailto:osmautomation@gmail.com" className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit hover:scale-105 transition-transform duration-200 cursor-pointer">
-                <EnvelopeSimple size={16} className="text-primary" />
-                <span className="text-foreground-secondary text-sm">osmautomation@gmail.com</span>
-              </a>
+              <div className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit opacity-60">
+                <EnvelopeSimple size={16} className="text-foreground-muted" />
+                <span className="text-foreground-muted text-sm">osmautomation@gmail.com</span>
+              </div>
               <div className="flex flex-col space-y-2">
-                <a href="tel:+353873833294" className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit hover:scale-105 transition-transform duration-200 cursor-pointer">
-                  <Phone size={16} className="text-primary" weight="fill" />
-                  <span className="text-foreground-secondary text-sm">+353 87 383 3294</span>
-                </a>
-                <a href="tel:+383873838906" className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit hover:scale-105 transition-transform duration-200 cursor-pointer">
-                  <Phone size={16} className="text-primary" weight="fill" />
-                  <span className="text-foreground-secondary text-sm">+383 87 383 8906</span>
-                </a>
+                <div className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit opacity-60">
+                  <Phone size={16} className="text-foreground-muted" weight="fill" />
+                  <span className="text-foreground-muted text-sm">+353 87 383 3294</span>
+                </div>
+                <div className="flex items-center space-x-2 glass-card p-3 rounded-lg w-fit opacity-60">
+                  <Phone size={16} className="text-foreground-muted" weight="fill" />
+                  <span className="text-foreground-muted text-sm">+383 87 383 8906</span>
+                </div>
               </div>
             </div>
           </div>
@@ -84,13 +84,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social & Legal */}
+          {/* Social */}
           <div className="order-3 md:order-3">
             <h3 className="font-semibold mb-6 text-lg">Connect</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-200 group" aria-label={social.label}>
-                  <social.icon size={20} className="text-foreground-secondary group-hover:text-primary transition-colors duration-200" />
-                </a>)}
+              {socialLinks.map(social => <div key={social.label} className="w-10 h-10 glass-card rounded-lg flex items-center justify-center opacity-60" aria-label={social.label}>
+                  <social.icon size={20} className="text-foreground-muted" />
+                </div>)}
             </div>
           </div>
         </div>

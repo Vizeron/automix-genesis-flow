@@ -48,11 +48,11 @@ const Navigation = () => {
                 </button>)}
             </div>
 
-            {/* CTA Button */}
+            {/* Unavailable Notice */}
             <div className="hidden lg:block">
-              <button onClick={() => scrollToSection('#contact')} className="neuro-button-primary px-6 py-2.5 rounded-lg text-sm font-medium">
-                Book Free Audit
-              </button>
+              <span className="glass-card px-6 py-2.5 rounded-lg text-sm font-medium text-foreground-muted">
+                Currently Unavailable
+              </span>
             </div>
 
             {/* Mobile Menu Button */}
@@ -73,9 +73,9 @@ const Navigation = () => {
                     {item.label}
                   </button>)}
                 <div className="pt-4 border-t border-border">
-                  <button onClick={() => scrollToSection('#contact')} className="w-full neuro-button-primary px-6 py-3 rounded-lg font-medium">
-                    Book Free Audit
-                  </button>
+                  <span className="block w-full glass-card px-6 py-3 rounded-lg font-medium text-foreground-muted text-center">
+                    Currently Unavailable
+                  </span>
                 </div>
               </div>
             </div>
