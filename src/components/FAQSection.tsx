@@ -27,12 +27,13 @@ const FAQSection = () => {
   return <section className="py-14 bg-background-secondary/30 pb-12">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-sm uppercase tracking-wide text-foreground-muted mb-4">These FAQs refer to services that are no longer offered.</p>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
             Frequently Asked 
             <span className="text-primary"> Questions</span>
           </h2>
           <p className="text-xl text-foreground-secondary">
-            Everything you need to know about our automation services
+            Information about our past automation services
           </p>
         </div>
 
@@ -60,24 +61,6 @@ const FAQSection = () => {
             </div>)}
         </div>
 
-        {/* Still have questions CTA */}
-        <div className="text-center mt-12 animate-fade-in" style={{
-        animationDelay: '0.6s'
-      }}>
-          <div className="glass-card p-6 rounded-xl inline-block">
-            <p className="text-foreground-secondary mb-4">
-              Still have questions? We're here to help.
-            </p>
-            <button onClick={() => {
-            const element = document.querySelector('#contact');
-            if (element) element.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }} className="neuro-button-primary px-6 py-3 rounded-lg font-medium">
-              Book a Free Consultation
-            </button>
-          </div>
-        </div>
       </div>
     </section>;
 };
