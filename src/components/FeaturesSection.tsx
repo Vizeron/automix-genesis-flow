@@ -16,12 +16,11 @@ const FeaturesSection = () => {
   return <section id="features" className="py-12 pb-14">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-sm uppercase tracking-wide text-foreground-muted mb-4">Past Services (No Longer Available)</p>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 glow-text">
             Our 
             <span className="text-primary "> Services</span>
           </h2>
-          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">We leveraged cutting-edge AI automation to help home service businesses capture every call, convert more leads, and keep their schedules full.</p>
+          <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">We leverage cutting-edge AI automation to help home service businesses capture every call, convert more leads, and keep their schedules full.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

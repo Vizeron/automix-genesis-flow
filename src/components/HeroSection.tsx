@@ -19,21 +19,22 @@ const HeroSection = () => {
         <div className="text-center max-w-8xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 glow-text animate-fade-in">
-            This Project Is <span className="text-primary">No Longer Accepting New Clients</span>
+            We Fill Your Schedule While <br className="hidden md:block" />You <span className="text-primary">Focus On The Work</span>
           </h1>
           
           {/* Subheading */}
           <p className="text-xl lg:text-2xl text-foreground-secondary mb-8 max-w-3xl mx-auto animate-fade-in" style={{
           animationDelay: '0.2s'
-        }}>Thank you for your interest. I'm no longer offering automation or AI services. This website is kept as a showcase of past work.</p>
+        }}>Stop losing jobs to missed calls and after-hours inquiries. Our 24/7 AI voice agent answers, qualifies, and books new customers so you never miss another opportunity.</p>
           
-          {/* Notice */}
+          {/* CTA Button */}
           <div className="mb-12 animate-fade-in" style={{
           animationDelay: '0.4s'
         }}>
-            <div className="glass-card px-8 py-4 rounded-lg inline-block">
-              <span className="text-foreground-secondary">Services discontinued</span>
-            </div>
+            <button onClick={scrollToContact} className="neuro-button-primary px-8 py-4 rounded-lg text-lg font-medium inline-flex items-center space-x-2 group">
+              <span>Book a Free Audit</span>
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-200" />
+            </button>
           </div>
 
           {/* Trusted Integrations Carousel */}
